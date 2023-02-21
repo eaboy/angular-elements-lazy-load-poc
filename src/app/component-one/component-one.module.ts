@@ -1,9 +1,11 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
+import { LazyModuleService } from '../lazy-module.service';
 import { ComponentOneComponent } from './component-one.component';
 
 @NgModule({
-  imports: [
+  providers: [
+    LazyModuleService
   ],
   declarations: [
     ComponentOneComponent
